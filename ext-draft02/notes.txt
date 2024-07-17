@@ -1,0 +1,90 @@
+notes
+  MUST APPLY
+            - inheritance
+            - abstract classes
+            - interfaces
+            - MVC
+            - exception handling
+            - OOP pillars
+        
+            **NOTE THE COMPUTE TOTAL PRICE IS CENTRAL TO ALL OF THIS**
+
+            TASK 1 <ROOM TYPE>
+            1. edit the create room method so it asks for the room type 
+            before creating the room
+            
+            2. create 2 new classes: deluxe room and executive room
+                >> make the parent room's room price protected
+                >> override the constructor / make their own constructors
+                    where their room price is whatever the rate is for that room type
+                >> these 2 classes will still be included sa array of rooms
+                    (cuz they are just TYPES of rooms)
+            
+            3. IM LOST (ToT)...
+                >> figure out a way to access those room prices for that reservation for
+                    - compute total price
+                    - printing of total price in the receipt
+                >> make sure din that the room type si displayed alongside 
+                the room name whenever it is listed down.
+            
+
+            TASK 2 <DISCOUNT CODES>
+            1. make a discount codes class (abstract class> with...
+                >> name
+                >> method to compute the rate (mark down)
+                ** ABSTRACT CLASSES HAVE ATTRIBUTES AND METHODS, BUT THEIR 
+                METHODS DONT HAVE AMYTHING IN THEM. ITS UP TO THE CHILD     
+                CLASSES TO FILL THOSE IN
+            
+            2. make child classes for the ones in the specs
+
+            3. sa hotel, under booking, make a thing that accepts string 
+            inputs for dicount codes
+                >> if empty string or 0, exit method
+            
+            4. LOST AGAIN
+                >> find a way for compute total price to access the 
+                computations for those discounts
+                    maybe...
+                    u pass the discount code either as a string itself or 
+                    int (method that converts it into int e.g. 1 - PAYDAY)
+                    then depending on that it will call the class and its 
+                    computation method. kung ganon, u need two compute Total
+                    price methods (one that accepts string and base price 
+                    and another that accepts rate (float) and base price)
+
+                    pwede ren...
+                    the discount class will have a rate nalang to pass to 
+                    the compute total price instead and there will only be 
+                    1 compute total price method.
+            
+            JULY 17
+            to do for tomoro
+            - apply the discount to the room's actual price
+            - display less of price under breakdown
+            - feel ko mali yung paglagay ko ng enterdiscount. maybe
+                i should put it sa reservation and then sa main, i access the enterdiscount theough the reservation
+
+        
+            TASK 3 <DATE PRICE MODIFIER>
+            1. make an array of date price modifiers that have the 
+            number of days and their mark up/down.
+
+            2. print: The following are the increase or decrease in 
+            prices given the number of days the customer will be staying in.
+            
+            3. if the datepricemodifier array is empty, print 
+            [THERE IS CURRENTLY NO MARK UP OR DOWN IN PRICES]
+
+            4. if not, proceed to step ...
+
+            5. ask user for length of days and new rate
+                >> make sure to keep asking if...
+                    - date is not valid ( < 1 or > 31)
+                    - rate < 50 or > 150
+                >> end if the input is empty (user just presses enter) or
+                    if they press 0 (idk ask hep pano niya ginawa sa gui)
+
+            **GIRLY MAKE SURE THAT THESE NEW RATES SHOW UP SA RECEIPT**
+            
+        */
