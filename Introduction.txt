@@ -2,3 +2,11 @@
 BY: SANTOS, FRANCINE
     TOLENTINO, HEPHZI
 S26
+
+[DIRECTORY]
+    (1) ClassFiles -- 11 .java files
+    (2) DialogFiles -- 1 .java file
+    (3) ExceptionFiles -- 5 .java files
+    (4) FormatFiles -- 9 .java files
+    (5) MVCFiles -- 17 .java files, 6 .png files
+    + 1 Driver file
