@@ -298,7 +298,7 @@ public class ManageController implements ActionListener, ItemListener {
                 view.clearInputTF();
             }
             else 
-                view.setSubmitStatus("Please refresh window.", 3);
+                view.setSubmitStatus("Can not change price.", 3);
         } catch (NoSelectionException e) {
             view.setSubmitStatus("Please select hotel.", 3);
         } catch (NumberException | NumberFormatException e) {
