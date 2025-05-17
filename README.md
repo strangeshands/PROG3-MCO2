@@ -1,5 +1,5 @@
 # Hotel Reservation System
-**Repository for CCPROG1 MCO**
+**Repository for CCPROG3 MCO**
 - Uploaded for publicity purposes
 - To compile:
   ```
